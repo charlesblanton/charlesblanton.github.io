@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 3em 30em 20em 8em;
+    grid-template-areas: 
+    "m m m m m m m m m m m m"
+    "a a a a a a a a a b b b"
+    "a a a a a a a a a c c c"
+    "f f f f f f f f f f f f";
+}
+
+.ElevateCLT {
+    grid-area: e
+}
+
+#mobilemenu {
+    grid-area: s
+}
+
+#menu {
+    grid-area: m
+}
+
+.info {
+    grid-area: a
+}
+
+.summer {
+    grid-area: b
+}
+
+.team {
+    grid-area: c
+}
+
+.footer {
+    grid-area: f
+}
+
+* {
+    box-sizing: border-box;
+}
+
